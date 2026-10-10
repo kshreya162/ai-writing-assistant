@@ -1,0 +1,23 @@
+[project]
+name = "ai-writing-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kshreya162", email = "shreyakhened@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.4",
+    "langchain-core>=1.6.9",
+    "langchain-google-genai>=4.4.0",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+ai-writing-assistant = "ai_writing_assistant:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
